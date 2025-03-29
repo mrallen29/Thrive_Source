@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./functions/hello.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="questions-text">
+
+            <div class="intro">
+                <img src="./Image/choi.png" alt="" class="image">
+                <p class="soc-style">
+                    
+                    <a class="soc-links" href="https://mail.google.com/mail/u/0/#inbox/FMfcgzQZTqBLvnPkjpnfWHjFjXPCnRXw?compose=new"><img class="icon" src="./Image/gmail.png" alt="">olguerachoi@gmail.com</a> 
+                    | 
+                    <a class="soc-links" href="https://www.linkedin.com/in/allen-paul-olguera-487a87290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img class="icon" src="./Image/linkedin.png" alt="">LinkedIn</a>
+                    |
+                    <a class="soc-links" href="https://github.com/mrallen29"><img class="icon" src="./Image/github.png" alt="">GitHub</a>
+                
+                </p>   
+                <p class="intro-par">Hi! My name is Allen Paul Olguera, and I am excited to share my responses to the thoughtful questions you have provided. I sincerely appreciate your time and consideration and hope you see me as a strong candidate for this opportunity. Thank you!</p>
+            </div>
+
+            <div class="qa 1">
+                <h2>1. Talk about how you made your site and why you chose the tools you did. Briefly explain one challenge you experienced in setting up this site and how you overcame it.</h2> <br>
+                <p>Answer: I built this site using VS Code from Microsoft because it’s an easy and versatile tool compared to other available IDEs. Back in college, I used to work with Sublime Text, but I now prefer VS Code. One challenge I encountered was aligning the div elements properly. I later realized that I had forgotten to use the global CSS selector (*) to reset the default margin to 0, which caused the misalignment.</p>
+            </div>
+
+            <div class="qa 2">
+                <h2>2. What did you think of our service during the time you used it? Provide some constructive criticism or some features that impressed you.</h2><br><br>
+                <p>Answer: Netlify was pretty straightforward to use, and I liked how easy it was to deploy a site with just a few steps. The automatic deployment from GitHub was a great feature, One thing that could be improved is better error messages when something goes wrong, especially with functions. It took some trial and error to figure out why my function wasn’t working. Overall,the experience was smooth, and I can see why many developers prefer it for quick deployments.</p>
+            </div>
+
+            <div class="qa 3">
+                <h2>3. Rank your 5 favorite and 5 least favorite activities from this list: https://gist.github.com/laurajodz/592402a6336410377dee1a744af846ab</h2><br>
+
+                <p>Answer: <br>
+
+                5 Favorites
+
+                <ol>
+                    <li>Dig through server logs to troubleshoot a customer's website behavior</li>
+                    <li>Manage a Support team</li>
+                    <li>Suggest and champion improvements to the Support team's workflow</li>
+                    <li>Create video tutorials to help teach users a specific feature or use case</li>
+                    <li>Submit bug reports and potentially bug fixes</li>
+                </ol>
+
+                <p>5 Least Favorites</p>
+                
+                <ol>
+                    <li>Engage multiple users at once via chat to answer their questions and troubleshoot problems</li>
+                    <li>Help manage communications during a service outage</li>
+                    <li>Work with prospective customers to explain our service and the pricing model</li>
+                    <li>Develop a code example to share with a customer</li>
+                    <li>Join a Zoom call with a VIP customer you have been helping via email, upon their request</li>
+                </ol>
+
+                </p>
+            </div>
+
+            <div class="qa 4">
+                <h2>4. Provide a link to documentation for a technical/developer-focused product, which you think are well done, and explain why you think they are well done.</h2><br>
+                <p>Answer: I'd choose <a class="google" href="https://developer.mozilla.org/en-US/">https://developer.mozilla.org/en-US/</a>
+                    or (MDN Web Docs), I'd chosen the MDN Web Docs for me it is the best well documented web tech dictionary for web developers, it highlights the very basics of the web technologies to the best practices necessary implementation for web syntax readability.
+                </p>
+            </div>
+
+            <div class="qa 5">
+                <h2>5. Explain, in a couple of paragraphs, what you think are two major challenges around DNS configuration for less-technical customers hosting websites.</h2><br>
+                <p>Answer: One big challenge with DNS configuration is understanding the different settings. Things like A records, CNAMEs, and MX records can be confusing, and changing the wrong one can make a website or email stop working. <br><br>
+
+                Another challenge is that DNS changes don’t update instantly. It can take minutes or even hours to fully work, which can be frustrating. If something goes wrong, it’s hard for non-technical users to know if they made a mistake or if they just need to wait.</p>
+
+            </div>
+
+            <div class="qa 6">
+                <h2>6. A customer writes in to Support saying simply that their “site won’t build”. You have access to their build logs, and there you see this error: Build failed due to a user error: Build script returned non-zero exit code: 2. You have no more information than this and the site’s source repository is private so you cannot test the build yourself. How would you troubleshoot this issue? What steps would you take? Also, please compose your best customer-facing first response.</h2>
+                <br><br>
+                <p>Answer: If a customer reports that their site won’t build and the logs show "Build failed due to a user error: Build script returned non-zero exit code: 2," I would start by checking the logs for more details. Since I can’t access their private repository, I would ask if they recently made changes, like updating dependencies or modifying configuration files. I’d also check if their build command is correct. If the issue isn’t clear, I’d suggest they try running the build locally using the same command to see if they get the same error. Common issues could include missing files, incorrect settings, or outdated dependencies.</p>
+            </div>
+            <div class="qa 7">
+                <h2>
+                    7. How would you set up an http 301 status redirect from “/netlify/anything” on your site, to https://www.google.com/search?q=anything. Please provide the redirect formatting here. Now, how about a proxy redirect? Please add that proxy redirect rule directly to your site. (Please add the proxy redirect to your website!)
+                </h2><br>
+                <p>Answer: To set up an HTTP 301 redirect from /netlify/anything to 
+                    <p class="par"> https://www.google.com/search?q=anything </p> 
+
+                    <br> <br> 
+
+                    <p>I added the following rule in a _redirects file: </p>
+
+                    <p class="par-format">/netlify/:query https://www.google.com/search?q=:query  301!</p> 
+                    
+                    <br> <br>
+
+                    <p>his rule captures anything after /netlify/ and redirects it permanently (301) to Google Search with the same query parameter.</p> <br> <br> <hr> <br>
+                    
+                    <p>For a proxy redirect, I used this rule:</p> <br>
+                    
+                    <p class="par-format">/netlify/:query  https://www.google.com/search?q=:query  200 </p>
+                    
+                    <br> <br>
+
+                    <p>This makes it appear as if the content is served from my website, but it actually fetches the result from Google.
+                    
+                    I placed the _redirects file in the root directory of my project alongside index.html and styles.css. After deployment, Netlify automatically processes these rules to handle the redirects.</p></p>
+            </div>
+            <div class="qa 8">
+                <h2>8. Please attempt to deploy a function on our service. This need not be complicated. It could be "Hello World". Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.</h2><br><br>
+                <p>Answer: I tried to deploy a simple "Hello World" function, but at first, I got a "Page Not Found" error. I made sure my function was inside a /functions folder and added a netlify.toml file, but it still didn’t work.
+
+                I checked the Netlify logs, redeployed a few times, and made sure my setup was correct. After some trial and error, I found out that there was a typo on the functions directory line inside netlify.toml and it worked</p>
+
+            </div>
+
+            <div class="qa 9">
+                <h2>
+                    9. We understand you don't know anything about our internal procedures at this stage, but we want you to explain at a high level how you'd react to this situation: You receive a report of a severe security issue on www.netlify.com. You can't immediately confirm the report, so what steps might you take to investigate or substantiate the report? What might you say to the reporter, even though we haven't confirmed their assertion yet, that will instill confidence that our business is very concerned about security? You believe there is a reasonable chance the report is correct and the problem is very large and impactful. How might you escalate?
+                </h2> <br> <br>
+                <p>Answer: I have been working as a technical support specialist for over two years, and I understand the importance of acknowledging and empathizing with the reporter in cases of severe issues. It’s crucial to ensure they feel heard and that we recognize the urgency of the situation.
+
+                In this case, my first step would be to acknowledge the report, express appreciation for bringing it to our attention, and reassure them that we take security concerns seriously. I would then gather as much detail as possible, such as error messages, logs, and steps to reproduce the issue, before escalating it to the appropriate security or engineering team. While awaiting further investigation, I would maintain clear communication with the reporter, providing updates as soon as possible to reinforce our commitment to security and transparency.</p>
+            </div>    
+
+
+
+        </div>
+        
+
+    </div>
+
+    <footer>
+        <p>@Allen Paul Olguera 2025</p>
+    </footer>
+</body>
+</html>
